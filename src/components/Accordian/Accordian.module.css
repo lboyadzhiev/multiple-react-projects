@@ -1,12 +1,16 @@
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  height: min-content;
   width: 100vw;
 }
 
 .accordian {
+  height: 80%;
   width: 50%;
 }
 
@@ -27,4 +31,16 @@
 .content {
   color: #ffff;
   height: auto;
+}
+
+.selectBtn {
+  padding: 10px 20px;
+  background-color: #614101;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.mlctBtn {
+  background-color: #281b02;
 }
