@@ -1,13 +1,24 @@
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
 import Accordian from './components/Accordian/Accordian';
 import RandomColor from './components/RandomColor/RandomColor';
+import Navbar from './components/Navigation/Navigation';
+
+// styles
+import classes from './App.module.css';
 
 function App() {
   return (
-    <div className='App'>
-      <Accordian />
-      <RandomColor />
-    </div>
+    <section className={classes.appLayout}>
+      <aside className={classes.navSidebar}>
+        <Navbar />
+      </aside>
+      <main className={classes.pageContent}>
+        <Routes>
+          <Route path='/' element={<Accordian />} />
+          <Route path='/generateColor' element={<RandomColor />} />
+        </Routes>
+      </main>
+    </section>
   );
 }
 
