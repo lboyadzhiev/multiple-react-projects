@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import Accordian from './components/Accordian/Accordian';
-import RandomColor from './components/RandomColor/RandomColor';
+import Accordian from './components/Domains/Accordian/Accordian';
+import RandomColor from './components/Domains/RandomColor/RandomColor';
 import Navbar from './components/Navigation/Navigation';
 
 // styles
