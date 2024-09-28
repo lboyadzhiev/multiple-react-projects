@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Accordian />} />
           <Route path='/generate_color' element={<RandomColor />} />
-          <Route path='/star_rating' element={<StarRating />} />
+          <Route path='/star_rating' element={<StarRating numOfStars={10} />} />
         </Routes>
       </main>
     </section>
