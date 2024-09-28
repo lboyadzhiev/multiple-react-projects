@@ -16,10 +16,18 @@ export default function Navigation() {
         </li>
         <li>
           <NavLink
-            to='/generateColor'
+            to='/generate_color'
             className={({ isActive }) => (isActive ? classes.active : '')}
           >
             Color Generator
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/star_rating'
+            className={({ isActive }) => (isActive ? classes.active : '')}
+          >
+            Start Rating
           </NavLink>
         </li>
       </ul>
