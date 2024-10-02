@@ -23,15 +23,20 @@ export default function GoalsApp() {
         title: 'Learn React + TS',
         description: 'Learn in in depth',
       };
+
       return [...prevGoals, newGoal];
     });
+  }
+
+  function handleDeleteGoal(id: number) {
+    setGoals((prevGoals) => prevGoals.filter((goal) => goal.id !== id));
   }
 
   return (
     <section className={classes.GoalsApp}>
       <Header />
       <button onClick={handleAddGoal}>Add Goal</button>
-      <GoalsList goals={goals} />
+      <GoalsList goals={goals} onHandleDeleteGoal={handleDeleteGoal} />
     </section>
   );
 }

@@ -9,14 +9,15 @@ import styles from './GoalsList.module.css';
 
 interface GoalsProps {
   goals: CourseGoal[];
+  onHandleDeleteGoal: (id: number) => void;
 }
 
-export default function GoalsList({ goals }: GoalsProps) {
+export default function GoalsList({ goals, onHandleDeleteGoal }: GoalsProps) {
   return (
     <ul className={styles.GoalsList}>
       {goals.map((goal) => (
         <li key={goal.id}>
-          <Goal title={goal.title} description={goal.description} />
+          <Goal goal={goal} onDelete={onHandleDeleteGoal} />
         </li>
       ))}
     </ul>
