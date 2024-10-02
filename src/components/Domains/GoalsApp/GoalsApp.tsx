@@ -3,6 +3,7 @@ import { useState } from 'react';
 // components
 import Header from './components/Header';
 import GoalsList from './components/GoalsList';
+import NewGaol from './components/NewGoal';
 
 // styles
 import classes from './GoalsApp.module.css';
@@ -16,12 +17,12 @@ export interface CourseGoal {
 export default function GoalsApp() {
   const [goals, setGoals] = useState<CourseGoal[]>([]);
 
-  function handleAddGoal() {
+  function handleAddGoal(goal: string, summary: string) {
     setGoals((prevGoals) => {
       const newGoal: CourseGoal = {
         id: Math.random(),
-        title: 'Learn React + TS',
-        description: 'Learn in in depth',
+        title: goal,
+        description: summary,
       };
 
       return [...prevGoals, newGoal];
@@ -35,7 +36,7 @@ export default function GoalsApp() {
   return (
     <section className={classes.GoalsApp}>
       <Header />
-      <button onClick={handleAddGoal}>Add Goal</button>
+      <NewGaol onAddGoal={handleAddGoal} />
       <GoalsList goals={goals} onHandleDeleteGoal={handleDeleteGoal} />
     </section>
   );
