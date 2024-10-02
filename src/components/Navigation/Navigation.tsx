@@ -1,5 +1,6 @@
-// styles
 import { NavLink } from 'react-router-dom';
+
+// styles
 import classes from './Navigation.module.css';
 
 export default function Navigation() {
@@ -28,6 +29,14 @@ export default function Navigation() {
             className={({ isActive }) => (isActive ? classes.active : '')}
           >
             Start Rating
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to='/goals_app'
+            className={({ isActive }) => (isActive ? classes.active : '')}
+          >
+            Goals App
           </NavLink>
         </li>
       </ul>
