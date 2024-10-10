@@ -1,16 +1,16 @@
 import { NavLink } from 'react-router-dom';
 
 // styles
-import classes from './Navigation.module.css';
+import styles from './Navigation.module.css';
 
 export default function Navigation() {
   return (
-    <div className={classes.navigation}>
+    <div className={styles.navigation}>
       <ul>
         <li>
           <NavLink
             to='/'
-            className={({ isActive }) => (isActive ? classes.active : '')}
+            className={({ isActive }) => (isActive ? styles.active : '')}
           >
             Selector Project
           </NavLink>
@@ -18,7 +18,7 @@ export default function Navigation() {
         <li>
           <NavLink
             to='/generate_color'
-            className={({ isActive }) => (isActive ? classes.active : '')}
+            className={({ isActive }) => (isActive ? styles.active : '')}
           >
             Color Generator
           </NavLink>
@@ -26,7 +26,7 @@ export default function Navigation() {
         <li>
           <NavLink
             to='/star_rating'
-            className={({ isActive }) => (isActive ? classes.active : '')}
+            className={({ isActive }) => (isActive ? styles.active : '')}
           >
             Start Rating
           </NavLink>
@@ -34,7 +34,7 @@ export default function Navigation() {
         <li>
           <NavLink
             to='/goals_app'
-            className={({ isActive }) => (isActive ? classes.active : '')}
+            className={({ isActive }) => (isActive ? styles.active : '')}
           >
             Goals App
           </NavLink>

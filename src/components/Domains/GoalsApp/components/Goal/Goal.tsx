@@ -1,5 +1,5 @@
 // models
-import { type CourseGoal } from '../GoalsApp';
+import { type CourseGoal } from '../../GoalsApp';
 
 // styles
 import styles from './Goal.module.css';
