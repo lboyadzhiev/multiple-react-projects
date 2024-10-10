@@ -1,12 +1,13 @@
 import { useState } from 'react';
 
 // components
-import Header from './components/Header';
-import GoalsList from './components/GoalsList';
-import NewGaol from './components/NewGoal';
+import Header from './components/Header/Header';
+import GoalsList from './components/GoalsList/GoalsList';
+import NewGaol from './components/NewGoal/NewGoal';
+import InfoBox from './components/InfoBox/InfoBox';
 
 // styles
-import classes from './GoalsApp.module.css';
+import styles from './GoalsApp.module.css';
 
 export interface CourseGoal {
   title: string;
@@ -34,10 +35,17 @@ export default function GoalsApp() {
   }
 
   return (
-    <section className={classes.GoalsApp}>
+    <section className={styles.GoalsApp}>
       <Header />
       <NewGaol onAddGoal={handleAddGoal} />
-      <GoalsList goals={goals} onHandleDeleteGoal={handleDeleteGoal} />
+      {goals.length === 0 ? (
+        <InfoBox mode='hint' />
+      ) : (
+        <>
+          {goals.length > 4 && <InfoBox mode='warning' />}
+          <GoalsList goals={goals} onHandleDeleteGoal={handleDeleteGoal} />
+        </>
+      )}
     </section>
   );
 }

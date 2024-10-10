@@ -1,8 +1,8 @@
 //models
-import { type CourseGoal } from '../GoalsApp';
+import { type CourseGoal } from '../../GoalsApp';
 
 // components
-import Goal from './Goal';
+import Goal from '../Goal/Goal';
 
 //styles
 import styles from './GoalsList.module.css';

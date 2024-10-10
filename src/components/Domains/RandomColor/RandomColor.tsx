@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 // styles
-import classes from './RandomColor.module.css';
+import styles from './RandomColor.module.css';
 
 export default function RandomColor() {
   const [color, setColor] = useState('#000000');
@@ -30,8 +30,8 @@ export default function RandomColor() {
   }
 
   return (
-    <div className={classes.container} style={{ background: color }}>
-      <div className={classes.btnContainer}>
+    <div className={styles.container} style={{ background: color }}>
+      <div className={styles.btnContainer}>
         <button onClick={() => generateColorHandler('hex')}>
           Create HEX Color
         </button>
@@ -40,7 +40,7 @@ export default function RandomColor() {
         </button>
       </div>
 
-      <div className={classes.colorString}>
+      <div className={styles.colorString}>
         <h1>{color}</h1>
       </div>
     </div>
