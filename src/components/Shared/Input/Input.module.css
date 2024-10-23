@@ -1,0 +1,23 @@
+.InputContainer {
+  label {
+    display: block;
+    font-size: 0.85rem;
+    color: #bbe3dd;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+  }
+
+  input {
+    display: block;
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #486560;
+    border-radius: 6px;
+    background-color: #daedea;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #07302a;
+  }
+}

@@ -9,6 +9,7 @@ import GoalsApp from './components/Domains/GoalsApp/GoalsApp';
 
 // styles
 import classes from './App.module.css';
+import Input from './components/Shared/Input/Input';
 
 function App() {
   return (
@@ -21,7 +22,15 @@ function App() {
           <Route path='/' element={<Accordian />} />
           <Route path='/generate_color' element={<RandomColor />} />
           <Route path='/star_rating' element={<StarRating numOfStars={10} />} />
-          <Route path='/goals_app' element={<GoalsApp />} />
+          <Route
+            path='/goals_app'
+            element={
+              <>
+                <Input id='name' label='Your Name' />
+                <Input id='age' label='Your Age' />
+              </>
+            }
+          />
         </Routes>
       </main>
     </section>
