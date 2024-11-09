@@ -10,6 +10,7 @@ import GoalsApp from './components/Domains/GoalsApp/GoalsApp';
 // styles
 import classes from './App.module.css';
 import Input from './components/Shared/Input/Input';
+import Button from './components/Shared/Button/Button';
 
 function App() {
   return (
@@ -28,6 +29,14 @@ function App() {
               <>
                 <Input id='name' label='Your Name' />
                 <Input id='age' label='Your Age' />
+                <p>
+                  <Button el='button'>A Button</Button>
+                </p>
+                <p>
+                  <Button el='anchor' href='https://google.com'>
+                    A Link
+                  </Button>
+                </p>
               </>
             }
           />
