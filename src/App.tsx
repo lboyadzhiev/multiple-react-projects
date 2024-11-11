@@ -11,6 +11,7 @@ import GoalsApp from './components/Domains/GoalsApp/GoalsApp';
 import classes from './App.module.css';
 import Input from './components/Shared/Input/Input';
 import Button from './components/Shared/Button/Button';
+import Container from './components/Shared/Container/Container';
 
 function App() {
   return (
@@ -27,16 +28,7 @@ function App() {
             path='/goals_app'
             element={
               <>
-                <Input id='name' label='Your Name' />
-                <Input id='age' label='Your Age' />
-                <p>
-                  <Button el='button'>A Button</Button>
-                </p>
-                <p>
-                  <Button el='anchor' href='https://google.com'>
-                    A Link
-                  </Button>
-                </p>
+                <Container as={'button'}>Click me</Container>
               </>
             }
           />
