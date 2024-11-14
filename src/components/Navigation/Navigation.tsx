@@ -31,14 +31,6 @@ export default function Navigation() {
             Start Rating
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to='/goals_app'
-            className={({ isActive }) => (isActive ? styles.active : '')}
-          >
-            Goals App
-          </NavLink>
-        </li>
       </ul>
     </div>
   );
