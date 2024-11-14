@@ -5,12 +5,9 @@ import Accordian from './components/Domains/Accordian/Accordian';
 import Navbar from './components/Navigation/Navigation';
 import RandomColor from './components/Domains/RandomColor/RandomColor';
 import StarRating from './components/Domains/StarRating/StarRating';
-import GoalsApp from './components/Domains/GoalsApp/GoalsApp';
 
 // styles
 import classes from './App.module.css';
-import Input from './components/Shared/Input/Input';
-import Button from './components/Shared/Button/Button';
 
 function App() {
   return (
@@ -23,23 +20,6 @@ function App() {
           <Route path='/' element={<Accordian />} />
           <Route path='/generate_color' element={<RandomColor />} />
           <Route path='/star_rating' element={<StarRating numOfStars={10} />} />
-          <Route
-            path='/goals_app'
-            element={
-              <>
-                <Input id='name' label='Your Name' />
-                <Input id='age' label='Your Age' />
-                <p>
-                  <Button el='button'>A Button</Button>
-                </p>
-                <p>
-                  <Button el='anchor' href='https://google.com'>
-                    A Link
-                  </Button>
-                </p>
-              </>
-            }
-          />
         </Routes>
       </main>
     </section>
