@@ -31,6 +31,14 @@ export default function Navigation() {
             Start Rating
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to='/learn_typescript'
+            className={({ isActive }) => (isActive ? styles.active : '')}
+          >
+            Learn TypeScript
+          </NavLink>
+        </li>
       </ul>
     </div>
   );
