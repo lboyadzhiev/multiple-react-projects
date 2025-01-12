@@ -1,0 +1,38 @@
+:root {
+  --bg-stone-900: #1c1917;
+  --bg-stone-700: #44403c;
+  --bg-stone-600: #57534e;
+  --bg-stone-400: #a8a29e;
+  --text-stone-100: #f5f5f4;
+}
+
+.managementSidebar {
+  background-color: var(--bg-stone-900);
+  color: var(--bg-stone-600);
+  grid-column: span 1;
+  padding: 2rem 3rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.managementSidebar h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.managementSidebar button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--bg-stone-700);
+  color: var(--bg-stone-400);
+}
+
+.managementSidebar button:hover {
+  background-color: var(--bg-stone-600);
+  color: var(--text-stone-100);
+}
+@media (min-width: 1024px) {
+  .managementSidebar {
+    width: 18rem;
+  }
+}

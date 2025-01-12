@@ -33,10 +33,10 @@ export default function Navigation() {
         </li>
         <li>
           <NavLink
-            to='/learn_typescript'
+            to='/management_app'
             className={({ isActive }) => (isActive ? styles.active : '')}
           >
-            Learn TypeScript
+            Management App
           </NavLink>
         </li>
       </ul>
