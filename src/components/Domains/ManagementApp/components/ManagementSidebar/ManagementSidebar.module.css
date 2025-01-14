@@ -1,9 +1,7 @@
-
-
 .managementSidebar {
-  background-color: var(--bg-stone-900);
-  color: var(--bg-stone-600);
-  grid-column: span 1;
+  background-color: var(--stone-900);
+  color: var(--stone-600);
+  width: 33%;
   padding: 2rem 3rem;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -17,13 +15,13 @@
 .managementSidebar button {
   padding: 0.5rem;
   border-radius: 10px;
-  background-color: var(--bg-stone-700);
-  color: var(--bg-stone-400);
+  background-color: var(--stone-700);
+  color: var(--stone-400);
 }
 
 .managementSidebar button:hover {
-  background-color: var(--bg-stone-600);
-  color: var(--text-stone-100);
+  background-color: var(--stone-600);
+  color: var(--stone-100);
 }
 @media (min-width: 1024px) {
   .managementSidebar {

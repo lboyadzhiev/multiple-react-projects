@@ -1,5 +1,8 @@
 import { type ComponentPropsWithoutRef } from 'react';
 
+// styles
+import styles from './Input.module.css';
+
 type InputProps = {
   label: string;
   id: string;
@@ -8,12 +11,12 @@ type InputProps = {
 
 export default function Input({ label, id, textArea, ...props }: InputProps) {
   return (
-    <p>
+    <p className={styles.customInput}>
       <label htmlFor={id}>{label}</label>
       {textArea ? (
-        <textarea name={label} id={id} />
+        <textarea className={styles.field} name={label} id={id} />
       ) : (
-        <input id={id} {...props} />
+        <input className={styles.field} id={id} {...props} />
       )}
     </p>
   );

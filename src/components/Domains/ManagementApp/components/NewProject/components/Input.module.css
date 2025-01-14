@@ -1,0 +1,28 @@
+.customInput {
+  display: flex;
+  flex-direction: column;
+  grid-area: 1rem;
+  margin: 1rem 0;
+}
+
+.customInput label {
+  font-size: smaller;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--stone-500);
+}
+
+.field {
+  width: 100%;
+  padding: 0.25rem;
+  background-color: var(--stone-200);
+  color: var(--stone-600);
+  border: none;
+  border-bottom: 2px solid var(--stone-300);
+  border-radius: 5px;
+}
+
+.field:focus {
+  outline: none;
+  border-bottom: 2px solid var(--stone-600);
+}
