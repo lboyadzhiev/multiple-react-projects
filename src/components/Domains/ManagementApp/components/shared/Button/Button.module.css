@@ -1,0 +1,11 @@
+.btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--stone-700);
+  color: var(--stone-400);
+}
+
+.btn:hover {
+  background-color: var(--stone-600);
+  color: var(--stone-100);
+}

@@ -1,0 +1,26 @@
+.noProjectSelected {
+  margin-top: 6rem;
+  text-align: center;
+  width: 67%;
+}
+
+.noProjectSelected img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.noProjectSelected h2 {
+  font-size: x-large;
+  color: var(--stone-500);
+  margin-top: 1rem 0;
+}
+
+.content {
+  color: var(--stone-400);
+  margin-bottom: 1rem;
+}
+
+.btnContainer {
+  margin-top: 2rem;
+}
